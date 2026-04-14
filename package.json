@@ -1,6 +1,6 @@
 {
   "name": "everymoji",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight, love-crafted emoji picker for Windows built with Electron, React and TypeScript.",
   "main": "./out/main/index.js",
   "author": "SebazzProductions",

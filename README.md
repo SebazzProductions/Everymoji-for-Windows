@@ -8,14 +8,16 @@ Everymoji soll sich weniger wie Software und mehr wie ein kleines gutes Helferle
 
 ## Download
 
-Release v1.0.0:
+Release v1.0.1:
 
-- Release-Seite: https://github.com/SebazzProductions/Everymoji-for-Windows/releases/tag/v1.0.0
-- Direkter EXE-Download: https://github.com/SebazzProductions/Everymoji-for-Windows/releases/download/v1.0.0/Everymoji-1.0.0-portable.exe
+- Release-Seite: https://github.com/SebazzProductions/Everymoji-for-Windows/releases/tag/v1.0.1
+- Direkter EXE-Download: https://github.com/SebazzProductions/Everymoji-for-Windows/releases/download/v1.0.1/Everymoji-1.0.1-portable.exe
 
 Die Windows-Version kommt als portable EXE. Herunterladen, starten, benutzen. Kein Installer-Zirkus, keine unnötigen Huerden.
 
 Und ganz wichtig fuer alle, die sowas wirklich benutzen statt nur kurz auszuprobieren: Favoriten und zuletzt verwendete Emojis bleiben erhalten. In der Portable-Version werden diese Daten direkt neben der EXE gespeichert, damit Everymoji auch beim Mitnehmen wirklich dein kleines Emoji-Zuhause bleibt.
+
+Hinweis fuer Windows: Beim ersten Start kann SmartScreen oder Windows selbst wegen eines "unbekannten" oder unsignierten Herausgebers warnen. Das ist bei kleinen Indie-Releases ohne Code-Signing-Zertifikat erstmal normal. Ich komme eher aus der Ecke signierter Android-Software und nicht aus klassischer Windows-Distribution mit teuren Signing-Zertifikaten, deshalb bitte davon nicht irritieren lassen.
 
 ## Features
 
