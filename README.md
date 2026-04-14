@@ -1,8 +1,10 @@
 # Everymoji for Windows
 
-Everymoji ist ein kleines Desktop-Werkzeug fuer Menschen, die Emojis wirklich oft benutzen und dabei nicht jedes Mal durch Browser-Tabs, Messenger-Picker oder Betriebssystem-Menues stolpern wollen.
+Everymoji ist ein kleiner Windows-Begleiter fuer alle, die Emojis nicht nur gelegentlich anklicken, sondern sie wirklich staendig benutzen, in Chats, Notizen, Posts, Mails oder einfach ueberall dort, wo ein bisschen Gefuehl, Ton oder Humor in einen Satz soll.
 
-Die App ist bewusst leicht, direkt und liebevoll gebaut: Ein fokussierter Emoji-Picker, schnelle Suche, Kategorien, Favoriten, Verlauf, Hauttoene und ein unkompliziertes Einfuegen genau dort, wo der Cursor gerade wartet. Die Idee dahinter ist nicht Feature-Masse, sondern ein Werkzeug, das sich angenehm anfuehlt und im Alltag einfach da ist, wenn man es braucht.
+Die App wurde nicht als aufgeblasenes Produkt gebaut, sondern als liebevoll gemachtes Werkzeug fuer echten Alltag: schnell, direkt, huebsch, praesent und angenehm. Ein Emoji-Picker, der nicht im Weg steht, sondern genau dann da ist, wenn man ihn braucht und genau dort einfuegt, wo der Cursor gerade wartet.
+
+Everymoji soll sich weniger wie Software und mehr wie ein kleines gutes Helferlein anfuehlen.
 
 ## Download
 
@@ -11,16 +13,27 @@ Release v1.0.0:
 - Release-Seite: https://github.com/SebazzProductions/Everymoji-for-Windows/releases/tag/v1.0.0
 - Direkter EXE-Download: https://github.com/SebazzProductions/Everymoji-for-Windows/releases/download/v1.0.0/Everymoji-1.0.0-portable.exe
 
-Die Windows-Version ist als portable EXE gedacht. Kein Installer, keine Umwege.
+Die Windows-Version kommt als portable EXE. Herunterladen, starten, benutzen. Kein Installer-Zirkus, keine unnötigen Huerden.
+
+Und ganz wichtig fuer alle, die sowas wirklich benutzen statt nur kurz auszuprobieren: Favoriten und zuletzt verwendete Emojis bleiben erhalten. In der Portable-Version werden diese Daten direkt neben der EXE gespeichert, damit Everymoji auch beim Mitnehmen wirklich dein kleines Emoji-Zuhause bleibt.
 
 ## Features
 
-- Suchbarer Emoji-Picker fuer Windows
-- Klick zum Auswaehlen, Doppelklick zum Sofort-Senden
+- Schneller, suchbarer Emoji-Picker fuer Windows
+- Klick zum Auswaehlen, Doppelklick zum direkten Senden
 - Kategorien, Favoriten und zuletzt verwendete Emojis
 - Hautton-Auswahl fuer unterstuetzte Emojis
-- Globaler Hotkey zum Oeffnen
-- Mehrere umschaltbare Themes inklusive Accessibility-Varianten
+- Globaler Hotkey fuer einen sofortigen Zugriff
+- Mehrere Themes inklusive Accessibility-Varianten
+- Portable EXE fuer einen unkomplizierten Start
+
+## Warum es existiert
+
+Viele kleine Tools loesen ein Problem technisch, aber fuehlen sich dabei komplett seelenlos an. Everymoji sollte das Gegenteil werden: eine schlanke App, die leicht wirkt, schnell reagiert und trotzdem sichtbar mit Liebe gebaut wurde.
+
+Nicht ueberladen. Nicht generisch. Nicht “auch noch ein Tool”.
+
+Sondern etwas, das man oeffnet und sofort merkt: Das hier wurde fuer echte Nutzung gemacht.
 
 ## Entwicklung
 
@@ -54,7 +67,7 @@ npm run typecheck
 npm run build:win
 ```
 
-Das erzeugt eine portable EXE in dist.
+Das erzeugt eine portable EXE im dist-Ordner.
 
 ## Stack
 
@@ -67,6 +80,8 @@ Das erzeugt eine portable EXE in dist.
 
 ## Projektgedanke
 
-Everymoji soll sich nicht wie eine generische Utility anfuehlen, sondern wie ein kleines Werkzeug mit Charakter. Schnell genug fuer den taeglichen Einsatz, visuell bewusst gestaltet und trotzdem schlicht genug, um nie im Weg zu stehen.
+Everymoji ist aus dem Wunsch entstanden, etwas Kleines zu bauen, das sich erstaunlich gut anfuehlt. Kein riesiges Produktversprechen, kein unnötiger Overhead, sondern ein fokussiertes Tool mit Charakter, Tempo und einer klaren Idee.
 
-Wenn du die App einfach nur startest, ein Emoji suchst und es sofort an die richtige Stelle schicken kannst, dann macht sie genau das, was sie soll.
+Wenn jemand die App startet, ein Emoji in Sekunden findet und es ohne Reibung genau dort landet, wo es hin soll, dann ist das Ziel erreicht.
+
+Und wenn man dabei noch ein kleines bisschen merkt, dass hier Herz drinsteckt, dann umso besser.
