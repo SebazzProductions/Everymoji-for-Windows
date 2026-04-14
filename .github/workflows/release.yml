@@ -1,0 +1,39 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build portable Windows release
+        run: npm run build:win
+
+      - name: Publish GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/Everymoji-*-portable.exe
+          generate_release_notes: true
+          body: |
+            First public release of Everymoji for Windows.
+
+            Includes the portable Windows executable, theme support, favorites, recents, skin tones and direct paste-to-cursor workflow.
