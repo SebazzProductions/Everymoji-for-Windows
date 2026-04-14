@@ -1,5 +1,6 @@
 import { app, BrowserWindow, ipcMain, globalShortcut, Tray, Menu, nativeImage } from 'electron'
 import { join } from 'path'
+import { mkdirSync } from 'fs'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import { sendEmoji, setLastExternalWindow } from './emoji-sender'
 import koffi from 'koffi'
@@ -10,6 +11,24 @@ const GetForegroundWindow = user32.func('void* GetForegroundWindow()')
 
 let mainWindow: BrowserWindow | null = null
 let tray: Tray | null = null
+
+function configurePortableStorage(): void {
+  const portableDir = process.env.PORTABLE_EXECUTABLE_DIR
+  if (!portableDir) return
+
+  const dataDir = join(portableDir, 'Everymoji Data')
+  const sessionDir = join(dataDir, 'session')
+  const logsDir = join(dataDir, 'logs')
+
+  mkdirSync(sessionDir, { recursive: true })
+  mkdirSync(logsDir, { recursive: true })
+
+  app.setPath('userData', dataDir)
+  app.setPath('sessionData', sessionDir)
+  app.setPath('logs', logsDir)
+}
+
+configurePortableStorage()
 
 function createWindow(): void {
   mainWindow = new BrowserWindow({
